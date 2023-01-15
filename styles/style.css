@@ -1,0 +1,126 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+/* upper section style */
+.upper{
+    height: 1322px;
+    background-color:  rgba(174, 136, 93, 0.1);;
+}
+/* Header style */
+.right-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.right-navbar h2{
+    padding-left: 100px;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 45px;
+}
+.right-navbar ul{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 28px;
+    padding-right: 30px;
+}
+.right-navbar li{
+    padding: 20px;
+}
+
+/* Upper writing styles */
+.upper-writing{
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center; */
+}
+.upper-writing-heading{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 50px;
+    word-wrap: break-word;
+
+  
+}
+.upper-writing-para{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.upper-writing-btn{
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #FF900E;
+    margin-left: 650px;
+    margin-right: 600px;
+    text-align: center;
+    margin-top: 20px;
+    
+    
+
+}
+.upper-btn-writing{
+    font-weight: 600;
+   font-size: 20px;
+   color: white;
+}
+
+
+/* Media query for navbar */
+
+@media only screen and (max-width:576px){
+    .right-navbar, .right-navbar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .right-navbar h2{
+        padding-left: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .right-navbar{
+        justify-content: space-evenly;
+    }
+    .right-navbar ul{
+        padding-top: 0px;
+        font-size: 10px;
+    }
+}
+
+/* media query for upper-writing */
+
+@media only screen and (max-width:576px){
+    .upper-writing{
+        width: 100%;
+    }
+    .upper-writing-heading{
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 20px;
+    
+    }
+    .upper-writing-para{
+        padding-left: 0px;
+        padding-top: 5px;
+        padding-right: 0px;
+        font-size: 5vw;
+        text-align: center;
+        
+    }
+    .upper-writing-btn{
+        margin-left: 25%;
+        align-items: center;
+    }
+}
